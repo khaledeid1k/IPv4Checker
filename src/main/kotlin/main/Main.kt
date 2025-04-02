@@ -43,6 +43,11 @@ fun main() {
         actualResult = checkIpv4IsValid("192_168_1_1") ,
         expectedResult = false
     )
+    checkResult(
+        caseName ="Given empty sting Then should return false" ,
+        actualResult = checkIpv4IsValid("") ,
+        expectedResult = false
+    )
 
 }
 
