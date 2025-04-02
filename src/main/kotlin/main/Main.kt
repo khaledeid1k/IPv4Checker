@@ -34,6 +34,11 @@ fun main() {
         expectedResult = false
     )
     checkResult(
+        caseName ="Given number with space Then should return false" ,
+        actualResult = checkIpv4IsValid("192     .168.1.1") ,
+        expectedResult = false
+    )
+    checkResult(
         caseName ="Given numbers contain only dots Then should return true" ,
         actualResult = checkIpv4IsValid("192.192.168.1") ,
         expectedResult = true
