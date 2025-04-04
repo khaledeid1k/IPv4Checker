@@ -24,8 +24,13 @@ fun main() {
         expectedResult = false
     )
     checkResult(
-        caseName ="When numbers between 0 to 255 Then should return true" ,
+        caseName ="When numbers between contain 0 number Then should return true" ,
         actualResult = isIpv4Valid("192.168.1.0") ,
+        expectedResult = true
+    )
+    checkResult(
+        caseName ="When numbers contain 255 number Then should return true" ,
+        actualResult = isIpv4Valid("192.255.1.0") ,
         expectedResult = true
     )
     checkResult(
